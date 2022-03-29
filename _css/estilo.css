@@ -10,12 +10,11 @@ body{
   
        width:900px;   
        background-color: white;
-       margin: -20px auto 0px auto;
+       
        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
        padding: 10px;
-     
-       
 }
+ 
    p{    
        text-align: justify;
        text-indent: 50px;
@@ -139,18 +138,18 @@ body{
          display: block;
          width: 300px;
          float: left;
-         border-right: 1px #606060 solid;
+         border-right: 10px #606060 solid;
       }
-      section#lateral {
+      aside#lateral {
 
-       display: block;
-       width: 150px;
-       float: right;
+         display: block;
+           width: 400px;
+           float: right;
       }
      footer#rodape {
 
       clear: both;
-      border-top: 1px #606060 solid;
+      border-top: -20px #606060 solid;
       text-align: center;
       padding-top: 1px
 
