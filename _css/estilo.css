@@ -64,8 +64,7 @@ a:hover{
 }
    header#cabecalho h2 {
   
-     font-family:arial, sans-serif;
-     font-size: 15pt;
+     font-family: arial,sans-serif;
      color: #888888;
       padding: 0px;
      margin-bottom: 10px;
@@ -257,7 +256,7 @@ figure.foto-legenda :hover figcaption{
         }
         aside#lateral h1 {
 
-          font-family: arial,sans-serif;
+          font-family: FonteLogo,sans-serif;
           font-size: 20pt;
           color: #606060;
           margin-top: 0px;
