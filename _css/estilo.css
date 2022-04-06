@@ -53,6 +53,8 @@ a:hover{
    
 
 }
+
+
   header#cabecalho h1 {
 
      font-family: "FonteLogo";
@@ -216,7 +218,7 @@ figure.foto-legenda :hover figcaption{
         }
       header#cabecalho-artigo h1{
 
-         font-family: arial, sans-serif;
+         font-family: "FonteLogo", sans-serif;
          font-size: 20pt;
          color: #606060;
          margin-bottom: 0px;

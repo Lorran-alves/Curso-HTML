@@ -6,6 +6,7 @@
     <meta charset="UTF8">
 
     <head>
+        <link rel="stylesheet" href="_css/specs.css">
    
         <link rel="stylesheet"  href="_css/estilo.css"/>   
 
@@ -22,7 +23,7 @@
                           <h2>A revolução do Google está chegando</h2>
                         </hgroup>
                    
-                             <img id="icone"  src="_imagens/glass-oculos-preto-peq.png" >
+                             <img id="icone"  src="_imagens/especificacoes.png" >
                        
         
                         
@@ -31,7 +32,7 @@
                               <h1 id="sumir"> Menu Principal</h1>
     
                              <ul>
-                                 <li  onmouseover="mudaFoto('_imagens/home.png')"onmouseout="mudaFoto('_imagensespecificacoes.png')"><a href="index.html">Home</li></a>
+                                 <li  onmouseover="mudaFoto('_imagens/home.png')"onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</li></a>
                                  <li onmouseover="mudaFoto('_imagens/especificacoes.png')"onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</li></a>
                                  <li onmouseover="mudaFoto('_imagens/fotos.png')"onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="fotos.html">Fotos</li></a>
                                  <li onmouseover="mudaFoto('_imagens/multimidia.png')"onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="multimidia.html">Multimídia</li></a>
@@ -40,18 +41,44 @@
                    </nav>
 
                 </header> 
+                       <section id="corpo-full">
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+                        <article id="noticia-principal">
+                            <header id="cabecalho-artigo">
+                             <hgroup>
+                             <h3> Glass > Especificações</h3>
+                             <h1>Raio-X no Google Glass</h1>
+                             <h2>Por Elio Lorran</h2>
+                             <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                            </hgroup>
+                       </header>
 
-[AQUI ENTRA UMA IMAGEM]
 
+
+                              <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+                              <article id="conteudo">
+
+                                <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meu-mapa">
+                                <map name="meu-mapa">
+
+                                    <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"/>
+                                    <area shape="circle" coords="150,243,12" href="google-glass.html#camera" target="janela"/>
+                                    <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela"/>
+                                    <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela">
+
+                                </map>
+                                <iframe src="google-glass.html"   name="janela" id="iframe-spec"
+                                " scrolling="no"> </iframe>
+                              </article>
+
+                                [AQUI ENTRA UMA IMAGEM]
+                                </article>
+                         </section>
 <footer id="rodape">
     Copyright&copy; 2022 - by Elio Lorran <br/>
+
     <a href="https://www.facebook.com/profile.php?id=100008247842768"  target="_blank">Facebook</a>|<a href="https://github.com/Lorran-alves" target="_blank">GitHub</a> 
 
    </footer>   
