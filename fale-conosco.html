@@ -5,7 +5,18 @@
 
     <head>
    
-        <link rel="stylesheet"  href="_css/estilo.css"/>   
+        <link rel="stylesheet"  href="_css/estilo.css"/> 
+        <link rel="stylesheet" href="_css/form.css">  
+      <script>
+
+        function Calc_Total(){
+
+            var qtd= parseInt (document.getElementById('cQtd').value);
+            ctot=qtd * 1500;
+            document.getElementById('ctot').value=ctot;
+        }
+
+      </script>
 
     </head>
  
@@ -38,39 +49,90 @@
                    </nav>
 
                 </header> 
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+                
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                     <hgroup>
+                     <h3>Fale Conosco > Contato</h3>
+                     <h1>Formulário de Contato</h1>
+                     <h2>Por Elio Lorran</h2>
+                     <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+               </header>
+  </article>
 
 
-[BOTÃO ENVIAR]
+<form method="post" id="fContato" action="mailto:ElioLorran@gmail.com" oninput="Call_Toltal();">
+
+<fieldset id="usuario" >   
+    <legend > Identificação do Usuario</legend> 
+<p><label for="iNome"> Nome:</label><input type="text" name="nNome" id="iNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+<p><label for="iSenha"> Senha:</label><input type="password" name="nSenha" id="iSenha" size="10" maxlength="10" placeholder="Digite a Senha"></p>
+    <p><label for="iEmail"> E-mail:</label><input type="email" name="nEmail" id="iEmail" size="20" maxlength="30" placeholder="Ultilize um Email Valido"></p>
+        <fieldset id="Sexo"> <legend><label for="Sexo"> Sexo</label></legend>
+      
+ 
+ <input type="radio" name="nSexo" id="iMasc" checked><label for="iMasc">Masculino</label> <br>
+  <input type="radio" name="nSexo" id="iFemi"><label for="iFemi">Feminino</label> 
+</fieldset>
+
+  <p><label for="iData"> Data de Nascimento:</label><input type="date" name="nData" id="iData" ></p>
+</fieldset>
+<fieldset id="endereco" >
+   
+    <legend> Endereço do Usuário </legend>
+
+<p><label for="iRua"> Logradouro:</label><input type="text" name="nRua" id="iRua" size="10" maxlength="80" placeholder="Rua, Aven, Beco"></p>
+
+<p><label for="iNume"> Número:</label><input type="number" name="nNume" id="iNume" min="0"
+    max="9999999"></p>
+
+<p><label for="iEst"> Estado:</label><select name="nEst" id="iEsta" >
+         <optgroup label="Região Suldeste">
+              <option> Rio de Janeiro</option>
+              <option>São Paulo</option>
+              <option>Minas Gerais</option>
+        </optgroup>
+        <optgroup label="Região Nordeste">
+              <optionselected >Pernambuco</option>
+              <option>Bahia</option>
+              <option>Maranhão</option>
+              <option>Ceará</option>
+              <option>Paraíba</option>
+              <option>Piauí</option>
+              <option>Riachão</option>
+             <option>Rio Grande do Norte</option>
+       </optgroup>
+       </select>
+     </p>
+
+<p><label for="iCid"> Cidade:</label><input type="text" name="nCid" id="iCid"  maxlength="40" size="20" placeholder="Sua Cidade" ></p>
+
+
+</fieldset>
+<fieldset id="Mensagem">
+        <legend >  Mensagem do Usuário </legend>
+        <p><label for="iUrg"> Grau de Urgência:</label> Min
+        <input type="range" name="nUrg" id="iUrg" min="0"
+        max="10"/>Máx</p>
+         <p><label for="iMsg">Mensagem:</label><textarea name="nMsg" id="iMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem" ></textarea></p>
+</fieldset>
+<fieldset id="pedido">  
+    <legend> Quero um Google Glass </legend>
+                 <p>  <input type="checkbox" name="nPed" id="iPed" checked/>
+                 <label for="iPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+
+                 <p> <label for="iCor">Cor:</label> <input type="color" name="nCor" id="iCor" value="#606060"></p>
+
+                 <p> <label for="cQtd">Quatidade:</label><input type="number" name="nQtd" id="cQtd" min="0" max="10"</p>
+
+                 <p> <label for="ctot">  Preço Total: R$</label><input type="text" name="iTolt" id="ctot" placeholder="Total a pagar" readonly></p>
+
+</fieldset>
+          <input type="image" name="nEnviar" src="_imagens/botao-enviar.png"
+
+
+</form>
 
 <footer id="rodape">
     Copyright&copy; 2022 - by Elio Lorran <br/>

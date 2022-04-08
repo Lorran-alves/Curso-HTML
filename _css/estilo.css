@@ -279,4 +279,14 @@ figure.foto-legenda :hover figcaption{
         border-top: 1px #606060 solid;
         text-align: center;
        }
-    
+    div video#video_section{
+
+        width: 480px;
+        margin: 15px;
+    }
+    div video#video_aside{
+
+     width: 330px;
+     margin: 10px;
+    }
+   
